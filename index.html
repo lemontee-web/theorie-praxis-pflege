@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine erste Webseite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="main-navigation">
+
+    <a href="#home">Start</a>
+    <a href="#cards">Meine Karten</a>
+    <a href="#contact">Kontakt</a>
+
+</nav>
+    <main class="welcome-card" id="home">
+        <h1>Meine erste Webseite</h1>
+
+        <p>
+            Herzlich willkommen!
+            Schön, dass du meine erste Webseite besuchst.
+        </p>
+<button
+    type="button"
+    class="toggle-button"
+    data-message="message"
+    data-original-text="Mehr erfahren">
+    Mehr erfahren
+</button>
+
+<p id="message" hidden>
+    Schön, dass du mehr erfahren möchtest!
+    JavaScript macht deine Webseite interaktiv.
+</p>
+<p id="message" hidden>
+    Toll! Du hast auf den Button geklickt.
+</p>
+<div id="cards">
+
+<section class="info-card">
+
+    <h2>Meine zweite Karte</h2>
+
+    <p>
+        Hier findest du weitere Informationen.
+    </p>
+
+    <button
+    type="button"
+    class="toggle-button"
+    data-message="infoMessage"
+    data-original-text="Informationen anzeigen">
+    Informationen anzeigen
+</button>
+
+    <p id="infoMessage" hidden>
+        Glückwunsch! Auch deine zweite Karte ist interaktiv.
+    </p>
+
+</section>
+
+<section class="learning-card">
+
+    <h2>Mein Lernbereich</h2>
+
+    <p>
+        Hier kannst du neue Inhalte entdecken.
+    </p>
+
+    <button
+        type="button"
+        class="toggle-button"
+        data-message="learningMessage"
+        data-original-text="Lerninhalt anzeigen">
+        Lerninhalt anzeigen
+    </button>
+
+    <p id="learningMessage" hidden>
+        Herzlichen Glückwunsch! Du hast deine dritte
+        interaktive Karte erstellt.
+    </p>
+
+</section>
+</div>
+</main>    
+<script src="script.js"></script>
+</body>
+</html>

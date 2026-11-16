@@ -1,0 +1,208 @@
+
+/* Page layout */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #E8E4FF, #FFE4EC, #DDF9F3);
+    font-family: Arial, sans-serif;
+    color: #25233A;
+}
+
+/* Main content card */
+.welcome-card {
+    background-color: #FFFFFF;
+    padding: 56px 48px;
+    border-radius: 22px;
+    text-align: left;
+    max-width: 520px;
+    width: calc(100% - 80px);
+    box-shadow: 0 14px 40px rgba(108, 76, 227, 0.16);
+    border-top: 7px solid #6C4CE3;
+}
+
+/* Main heading */
+h1 {
+    color: #6C4CE3;
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* Welcome text */
+p {
+    color: #514D66;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg, #6C4CE3, #FF6584);
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .welcome-card {
+        padding: 32px 24px;
+        width: calc(100% - 64px);
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+/* Card layout */
+.info-card {
+    background-color: #F1EDFF;
+    padding: 28px;
+    margin-top: 30px;
+    border-radius: 16px;
+    border-left: 6px solid #6C4CE3;
+}
+
+/* Second card heading */
+.info-card h2 {
+    color: #6C4CE3;
+    font-size: 25px;
+}
+
+/* Card text */
+.info-card p {
+    color: #514D66;
+}
+
+/* Second card button */
+.info-card button {
+    background: linear-gradient(135deg, #16B8A6, #0D9488);
+}
+
+.info-card button:hover {
+    background: #0D9488;
+}
+/* Responsive layout for mobile devices */
+@media (max-width: 600px) {
+
+    body {
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .welcome-card {
+        width: calc(100% - 48px);
+        padding: 28px 20px;
+        margin: 12px;
+    }
+
+    .info-card {
+        padding: 20px;
+        margin-top: 24px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .info-card h2 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+/* Third card design */
+.learning-card {
+    background-color: #DDF9F3;
+    padding: 28px;
+    margin-top: 30px;
+    border-radius: 16px;
+    border-left: 6px solid #16B8A6;
+}
+
+/* Third card heading */
+.learning-card h2 {
+    color: #0D9488;
+    font-size: 25px;
+}
+
+/* Third card text */
+.learning-card p {
+    color: #365C58;
+}
+
+/* Third card button */
+.learning-card button {
+    background: linear-gradient(135deg, #16B8A6, #0D9488);
+}
+
+.learning-card button:hover {
+    background: #087F73;
+}
+/* Main navigation */
+.main-navigation {
+    width: calc(100% - 40px);
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 18px 20px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(108, 76, 227, 0.12);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Navigation links */
+.main-navigation a {
+    color: #6C4CE3;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.main-navigation a:hover {
+    color: #FF6584;
+}
+
+/* Page layout adjustment */
+body {
+    display: block;
+    min-height: 100vh;
+    padding-top: 1px;
+}
+
+/* Main content positioning */
+.welcome-card {
+    margin: 30px auto;
+}
+
+/* Mobile navigation */
+@media (max-width: 600px) {
+    .main-navigation {
+        gap: 15px;
+        padding: 15px 8px;
+    }
+
+    .main-navigation a {
+        font-size: 14px;
+    }
+}
